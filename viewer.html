@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Room Viewer</title>
+    <link rel="stylesheet" href="/styles/viewer.css">
+</head>
+<body>
+    <div id="scene-container"></div>
+
+    <img id="arrow" src="/assets/arrow.png" alt="Arrow">
+
+    <div id="controls-container">
+        <button class="return-btn" onclick="window.location.href='index.html'">Return to Home</button>
+    </div>
+
+    <div id="annotation-overlay" style="display: none; position: absolute; bottom: 20px; left: 20px; color: white; background: rgba(0, 0, 0, 0.8); padding: 10px; border-radius: 5px;">
+        <h1></h1>
+        <p></p>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+
+    <script src="/scripts/viewer.js"></script>
+</body>
+</html>
